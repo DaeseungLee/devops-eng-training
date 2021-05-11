@@ -1,6 +1,6 @@
 # devops-eng-training
 
-## Web service for calculate two numbers
+## Web service for calculating two numbers
 
 ### Abstract
 Flask를 이용하여 web service를 만들었다. 기능은 간단하다. 유저로부터 2개의 숫자와 연산자를 받고 결과를 다시 웹에 보여준다. 이번 프로젝트는 기능 보다는 웹 서빙과 Devops에 활용되는 test case를 만드는 것에 의의가 있다. test는 숫자 계산에 대한 case와 웹 서비스가 잘 동작하는지에 대해서 구현하였다. 이 테스트는 향 후 서비스 관리에 이용된다.  
