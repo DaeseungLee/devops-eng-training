@@ -12,7 +12,7 @@ git clone https://github.com/DaeseungLee/devops-eng-training.git
 python3 app.py
 ```
 
-localhost와 포트번호 5000(default)로 연결되어 크롬과 같은 웹 브라우저로 접속하면 다음과 같은 화면을 볼 수 있다. 화면은 직관적으로 보기 쉬운데, 숫자 2개와 연산 (+,-,*,/) 각각의 출력 버튼을 누르면 최종 결과물을 받아볼 수 있다.
+localhost와 포트번호 5000(default)로 연결된다. 화면은 직관적으로 보기 쉬운데, 숫자 2개와 연산 (+,-,*,/) 각각의 출력 버튼을 누르면 최종 결과물을 받아볼 수 있다.
 
 ### Test
 function 부분은 unittest folder안의 test_functions.py를 통해, web service 부분은 integration folder안의 test_app.py를 통해 test할 수 있다. devops-eng-training 폴더에서 다음 명령어로 각각 실행 할 수 있다.  
