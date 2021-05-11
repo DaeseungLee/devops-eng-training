@@ -7,8 +7,10 @@ Flask를 이용하여 web service를 만들었다. 기능은 간단하다. 유�
 route는 처음에 접속하면 index.html을 rendering한다. 그리고 /get/* 와 같은 형식으로 plus, sub, multiplication, divide 4가지에 경우에 대해서 Get method를 요청하여 input 숫자에 대한 연산을 한다. n1, n2 2개와 각 연산의 버튼을 누르면 결과를 볼 수 있다.
 
 ### Usage
-git clone ~~  
+```
+git clone https://github.com/DaeseungLee/devops-eng-training.git
 python3 app.py
+```
 
 localhost와 포트번호 5000(default)로 연결되어 크롬과 같은 웹 브라우저로 접속하면 다음과 같은 화면을 볼 수 있다. 화면은 직관적으로 보기 쉬운데, 숫자 2개와 연산 (+,-,*,/) 각각의 출력 버튼을 누르면 최종 결과물을 받아볼 수 있다.
 
