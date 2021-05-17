@@ -7,9 +7,9 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   # main branch에 push, pull_request 되는 경우에 실행을 하겠다
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, develop ]
 
   workflow_dispatch:
 
