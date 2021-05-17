@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from functions import plus, sub, multiplication, divide
+from functions import plus, sub, multiplication, divide, square
 app = Flask(__name__)
 
 @app.route("/")
@@ -17,16 +17,18 @@ def get_plus(result=None):
 
     result = str(plus(n1,n2))
 
-    return render_template('index.html', result=result)
+    return result
+    # return render_template('index.html', result=result)
 
 @app.route("/get/sub", methods=["GET"])
 def get_sub(result=None):
     n1 = float(request.args.get('n1'))
     n2 = float(request.args.get('n2'))
-
+    
     result = str(sub(n1,n2))
 
-    return render_template('index.html', result=result)
+    return result
+    # return render_template('index.html', result=result)
 
 @app.route("/get/multiplication", methods=["GET"])
 def get_multiplication(result=None):
@@ -35,7 +37,8 @@ def get_multiplication(result=None):
 
     result = str(multiplication(n1,n2))
 
-    return render_template('index.html', result=result)
+    return result
+    # return render_template('index.html', result=result)
 
 @app.route("/get/divide", methods=["GET"])
 def get_divide(result=None):
@@ -47,7 +50,17 @@ def get_divide(result=None):
     else:
         result = None
 
-    return render_template('index.html', result=result)
+    return result
+    # return render_template('index.html', result=result)
+
+@app.route("/get/square", methods=["GET"])
+def get_square(result=None):
+    n1 = float(request.args.get('n1'))
+    n2 = float(request.args.get('n2'))
+    # print(square(n1,n2))
+
+    return str(square(n1,n2))
+    # return render_template('index.html', result=result)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000', debug=True)
