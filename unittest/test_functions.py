@@ -1,6 +1,6 @@
 # TODO(everyone): 더하기, 빼기, 곱하기, 나누기 함수 테스트 케이스 작성
 import sys, os
-from functions import plus, sub, multiplication, divide
+from functions import plus, sub, multiplication, divide, square, sqrt
 import pytest
 
 
@@ -20,3 +20,10 @@ def test_divide():
     assert divide(3, 4) == 0.75
     assert divide(1, 3) == 0.33
     assert divide(4, 0) == None
+
+def test_square():
+    assert square(2,1) == 2
+    assert square(3,5) == 243
+
+def test_sqrt():
+    assert sqrt(4) == 2
